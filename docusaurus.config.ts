@@ -8,6 +8,8 @@ dotenvconfig();
 /* TODO: change to read configuration from environment */
 const blogEnabled = Boolean(process.env.BLOG_ENABLED === 'true')
 
+const gitRepositoryUrl = process.env.GIT_REPOSITORY_URL ?? ''
+
 const config: Config = {
   title: 'My Project Portfolio',
   tagline: 'Werner Raatz - Test Automation & Quality Advocate with a passion for reliable software and efficient processes',
