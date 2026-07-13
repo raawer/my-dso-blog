@@ -1,7 +1,7 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
-import {config as dotenvconfig}  from "dotenv";
+import { config as dotenvconfig } from "dotenv";
 
 dotenvconfig();
 
@@ -9,8 +9,8 @@ dotenvconfig();
 const blogEnabled = Boolean(process.env.BLOG_ENABLED === 'true')
 
 const config: Config = {
-  title: 'DSO Live Demo Docs',
-  tagline: 'Dinosaurs are cool',
+  title: 'My Project Portfolio',
+  tagline: 'Werner Raatz - Test Automation & Quality Advocate with a passion for reliable software and efficient processes',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -48,7 +48,7 @@ const config: Config = {
           editUrl:
             'https://github.com/spmse/dev-blog-template',
         },
-        blog: blogEnabled ? 
+        blog: blogEnabled ?
           {
             showReadingTime: true,
             feedOptions: {
@@ -145,7 +145,7 @@ const config: Config = {
         {
           className: 'theme-code-block-highlighted-line',
           line: 'highlight-next-line',
-          block: {start: 'highlight-start', end: 'highlight-end'},
+          block: { start: 'highlight-start', end: 'highlight-end' },
         },
         {
           className: 'code-block-error-line',
@@ -158,7 +158,7 @@ const config: Config = {
 
 
 if (blogEnabled) {
-  (config.themeConfig.navbar as any).items.push({to: '/blog', label: 'Blog', position: 'left'});
+  (config.themeConfig.navbar as any).items.push({ to: '/blog', label: 'Blog', position: 'left' });
   (
     config.themeConfig.footer as any
   ).links[2].items.push({
