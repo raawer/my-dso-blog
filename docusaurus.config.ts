@@ -78,10 +78,10 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'My Project Portfolio',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Werner Raatz',
+        src: 'img/werner_xs.png',
       },
       items: [
         {
@@ -91,7 +91,7 @@ const config: Config = {
           label: 'Docs',
         },
         {
-          href: 'https://github.com/spmse/dev-blog-template',
+          href: 'https://github.com/raawer/my-dso-blog',
           label: 'Github',
           position: 'right',
         },
