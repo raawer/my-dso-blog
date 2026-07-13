@@ -119,8 +119,12 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            }
+              href: 'https://github.com/raawer/my-dso-blog',
+            },
+            {
+              label: 'Template',
+              href: 'https://github.com/Developer-Akademie-DevSecOpsKurs/dev-blog-template',
+            },
           ],
         },
       ],
