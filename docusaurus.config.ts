@@ -103,7 +103,7 @@ const config: Config = {
             },
             {
               label: 'Projects',
-              to: '/docs/projects',
+              to: '/docs/projects/overview',
             },
           ],
         },
@@ -146,10 +146,10 @@ const config: Config = {
 
 
 if (blogEnabled) {
-  (config.themeConfig.navbar as any).items.push({ to: '/blog', label: 'Blog', position: 'left' });
+  (config.themeConfig!.navbar as any).items.push({ to: '/blog', label: 'Blog', position: 'left' });
   (
-    config.themeConfig.footer as any
-  ).links[2].items.push({
+    config.themeConfig!.footer as any
+  ).links[1].items.push({
     to: '/blog',
     label: 'Blog',
   });
