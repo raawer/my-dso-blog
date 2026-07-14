@@ -8,7 +8,7 @@ dotenvconfig();
 /* TODO: change to read configuration from environment */
 const blogEnabled = Boolean(process.env.BLOG_ENABLED === 'true')
 
-const gitRepositoryUrl = process.env.GIT_REPOSITORY_URL ?? ''
+const gitRepositoryUrl = process.env.GIT_REPOSITORY_URL ?? 'https://github.com/raawer/my-dso-blog'
 
 const config: Config = {
   title: 'My Project Portfolio',
