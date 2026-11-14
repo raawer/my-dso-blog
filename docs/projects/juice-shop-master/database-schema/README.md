@@ -29,7 +29,7 @@ VM. Never apply these techniques to systems you are not authorized to test.
 | Category | Injection (SQL Injection) |
 | Difficulty | ⭐⭐⭐ |
 | Technique | `UNION`-based SQL injection |
-| Video | _[add link here]_ |
+| Video | [Watch on Loom](https://www.loom.com/share/ee6c1a8be99848899a60bd4649dcef9f) |
 
 ## The Vulnerability
 
