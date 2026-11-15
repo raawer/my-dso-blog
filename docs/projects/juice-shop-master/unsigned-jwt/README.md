@@ -12,6 +12,12 @@ attacks were performed against a local OWASP Juice Shop instance in a personal
 VM. Never apply these techniques to systems you are not authorized to test.
 :::
 
+:::note Test data only
+The JWTs and the password hash shown in the screenshots belong to a disposable
+local test account on a throwaway Juice Shop instance that is reset on every
+restart. They are demonstration artifacts, not real credentials.
+:::
+
 ## Table of Contents
 
 - [Overview](#overview)
