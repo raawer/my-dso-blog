@@ -1,6 +1,6 @@
 # Unsigned JWT
 
-A 5-star **Broken Authentication** challenge in the OWASP Juice Shop. The goal is
+A 5-star **Vulnerable Components** challenge in the OWASP Juice Shop. The goal is
 to forge a JSON Web Token (JWT) that impersonates the non-existing user
 `jwtn3d@juice-sh.op`. Because the server does not restrict which signature
 algorithm it accepts, a token whose header declares `alg: none` is treated as
@@ -27,10 +27,10 @@ VM. Never apply these techniques to systems you are not authorized to test.
 | Property | Value |
 | --- | --- |
 | Challenge | Unsigned JWT |
-| Category | Broken Authentication |
+| Category | Vulnerable Components |
 | Difficulty | ⭐⭐⭐⭐⭐ |
 | Technique | `alg: none` signature-bypass (JWT forgery) |
-| Video | _[add link here]_ |
+| Video | [Watch on Loom](https://www.loom.com/share/2058821e9ba64a589d93c6e4408e2749) |
 
 ## The Vulnerability
 
