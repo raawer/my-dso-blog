@@ -1,5 +1,5 @@
 import Layout from '@theme/Layout';
-import Hero from '@site/src/components/Hero';
+import Hero from '@site/src/components/hero';
 
 export default function Portfolio(): JSX.Element {
   return (
