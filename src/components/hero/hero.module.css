@@ -5,6 +5,9 @@
   background-color: var(--color-vibrant-blue);
   color: var(--color-white);
   line-height: 1.2;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
 }
 
 .greeting {
@@ -48,4 +51,12 @@
 .contactButton:focus-visible {
   outline: 3px solid var(--color-white);
   outline-offset: 3px;
+}
+
+.photo {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 30px;
 }
