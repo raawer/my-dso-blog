@@ -1,34 +1,46 @@
 .hero {
   font-family: 'Quicksand', sans-serif;
-  padding: 5rem 1rem;
-  text-align: left;
   background-color: var(--color-vibrant-blue);
   color: var(--color-white);
   line-height: 1.2;
+  padding: 3.75rem 7.5rem 4.5rem;
+}
+
+.inner {
   display: flex;
   align-items: center;
-  gap: 3rem;
+  justify-content: space-between;
+  gap: 5rem;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.content > * {
+  margin: 0;
 }
 
 .greeting {
   font-size: 2rem;
   font-weight: 400;
+  margin-bottom: 1rem;
 }
 
 .title {
   font-size: 5.5rem;
   font-weight: 700;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .subtitle {
   font-size: 2rem;
   font-weight: 500;
+  margin-bottom: 2.5rem;
 }
 
 .description {
   font-size: 1.375rem;
   font-weight: 600;
+  margin-bottom: 2.5rem;
 }
 
 .contactButton {
@@ -56,7 +68,7 @@
 .photo {
   display: block;
   width: 100%;
-  max-width: 400px;
+  max-width: 27.5rem;
   height: auto;
   border-radius: 30px;
 }
