@@ -38,3 +38,14 @@
   font-weight: 600;
   text-decoration: none;
 }
+
+.contactButton:hover {
+  background-color: color-mix(in srgb, var(--color-white) 85%, transparent);
+  color: var(--color-vibrant-blue);
+  text-decoration: none;
+}
+
+.contactButton:focus-visible {
+  outline: 3px solid var(--color-white);
+  outline-offset: 3px;
+}
