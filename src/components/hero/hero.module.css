@@ -2,8 +2,8 @@
   font-family: 'Quicksand', sans-serif;
   padding: 5rem 1rem;
   text-align: left;
-  background-color: #266AD9;
-  color: #fff;
+  background-color: var(--color-vibrant-blue);
+  color: var(--color-white);
   line-height: 1.2;
 }
 
