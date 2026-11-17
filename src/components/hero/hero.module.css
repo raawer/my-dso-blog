@@ -3,19 +3,20 @@
   background-color: var(--color-vibrant-blue);
   color: var(--color-white);
   line-height: 1.2;
-  padding: 3.75rem 7.5rem 4.5rem;
+  padding: 3.75rem clamp(1.5rem, 8.33vw, 7.5rem) 4.5rem;
 }
 
 .inner {
   display: grid;
-  grid-template-columns: 41.5rem 27.5rem;
+  grid-template-columns: minmax(0, 41.5rem) 27.5rem;
   grid-template-areas:
-    "greeting    photo"
-    "title       photo"
-    "subtitle    photo"
-    "description photo"
-    "button      photo";
+  "greeting    photo"
+  "title       photo"
+  "subtitle    photo"
+  "description photo"
+  "button      photo";
   justify-content: space-between;
+  column-gap: 5rem;
   max-width: 75rem;
   margin: 0 auto;
 }
@@ -33,7 +34,7 @@
 
 .title {
   grid-area: title;
-  font-size: 5.5rem;
+  font-size: clamp(3rem, 6.1vw, 5.5rem);
   font-weight: 700;
   margin-bottom: 1rem;
 }
