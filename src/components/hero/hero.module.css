@@ -98,6 +98,7 @@
       "photo"
       "description"
       "button";
+    max-width: 25rem;
   }
 
   .greeting {
@@ -116,8 +117,7 @@
   }
 
   .photo {
-    max-width: none;
-    height: 18.75rem;
+    aspect-ratio: 313 / 300;
     object-fit: cover;
     margin-bottom: 1.5rem;
   }
