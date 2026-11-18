@@ -21,19 +21,19 @@ This repository hosts my personal DevSecOps learning diary, blog, and portfolio.
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) (v16 or later recommended)
-- [pnpm](https://pnpm.io/)
+- [Node.js](https://nodejs.org/) (v18 or later; CI builds with Node 26)
+- npm (ships with Node.js)
 
 1. Install the dependencies:
 
    ```bash
-   pnpm install
+   npm ci
    ```
 
 2. Start the local development server:
 
    ```bash
-   pnpm start
+   npm start
    ```
 
    This command starts a local development server and opens the website in a browser. Most changes are reflected live without restarting the server.
@@ -41,10 +41,18 @@ This repository hosts my personal DevSecOps learning diary, blog, and portfolio.
 3. Create a production build:
 
    ```bash
-   pnpm build
+   npm run build
    ```
 
    This command generates the static website in the `build` directory.
+
+4. Check the TypeScript types:
+
+   ```bash
+   npm run typecheck
+   ```
+
+   The CI runs this check on every pull request.
 
 ## Repository Structure
 
@@ -56,7 +64,7 @@ The repository is organized as follows:
 - `static/`: Stores static assets such as images and icons.
 - `sidebars.ts`: Configures the structure of the documentation sidebars.
 - `docusaurus.config.ts`: Contains the main website configuration.
-- `build/`: Generated after running `pnpm build`; contains the static website files ready for deployment.
+- `build/`: Generated after running `npm run build`; contains the static website files ready for deployment.
 
 New content can be added as follows:
 
