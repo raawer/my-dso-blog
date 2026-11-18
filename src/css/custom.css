@@ -5,6 +5,38 @@
  */
 
 /* You can override the default Infima variables here. */
+@font-face {
+  font-family: 'Quicksand';
+  src: url('./fonts/quicksand-400.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('./fonts/quicksand-500.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('./fonts/quicksand-600.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('./fonts/quicksand-700.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;
@@ -15,6 +47,11 @@
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  /* Design tokens from the Figma component library */
+  --color-dark-blue: #262e34;
+  --color-vibrant-blue: #266ad9;
+  --color-white: #ffffff;
+  --color-bright-blue: #91c9f3;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
