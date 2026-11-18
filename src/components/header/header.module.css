@@ -25,3 +25,14 @@
   color: var(--color-white);
   text-decoration: none;
 }
+
+.link:hover {
+  color: var(--color-white);
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+}
+
+.link:focus-visible {
+  outline: 3px solid var(--color-white);
+  outline-offset: 4px;
+}
