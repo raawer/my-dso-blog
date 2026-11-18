@@ -1,5 +1,5 @@
 import styles from './hero.module.css';
-import photo from '@site/static/img/werner.png';
+import photo from '@site/static/img/werner-hero.jpg';
 
 
 export default function Hero(): JSX.Element {

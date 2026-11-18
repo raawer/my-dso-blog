@@ -10,11 +10,11 @@
   display: grid;
   grid-template-columns: minmax(0, 41.5rem) 27.5rem;
   grid-template-areas:
-  "greeting    photo"
-  "title       photo"
-  "subtitle    photo"
-  "description photo"
-  "button      photo";
+    "greeting    photo"
+    "title       photo"
+    "subtitle    photo"
+    "description photo"
+    "button      photo";
   justify-content: space-between;
   column-gap: 5rem;
   max-width: 75rem;
@@ -58,13 +58,15 @@
   align-self: center;
   width: 100%;
   max-width: 27.5rem;
-  height: auto;
+  aspect-ratio: 442 / 479;
+  object-fit: cover;
   border-radius: 30px;
 }
 
 .contactButton {
   grid-area: button;
   justify-self: start;
+  align-self: start;
   padding: 0.875rem 1.25rem;
   font-size: 1.25rem;
   font-weight: 600;
@@ -121,6 +123,7 @@
     aspect-ratio: 313 / 300;
     object-fit: cover;
     margin-bottom: 1.5rem;
+    object-position: center 25%;
   }
 
   .description {
