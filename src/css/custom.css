@@ -72,3 +72,9 @@
 body:has(.homepage) .navbar {
   display: none;
 }
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
