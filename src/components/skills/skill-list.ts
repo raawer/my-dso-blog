@@ -9,10 +9,20 @@ import YamlIcon from '@site/static/img/skills/yaml.svg';
 import DockerIcon from '@site/static/img/skills/docker.svg';
 import ActionsIcon from '@site/static/img/skills/github-actions.svg';
 import SecurityIcon from '@site/static/img/skills/security.svg';
+import HtmlChip from '@site/static/img/chips/html.svg';
+import CssChip from '@site/static/img/chips/css.svg';
+import DocusaurusChip from '@site/static/img/chips/docusaurus.svg';
+import PythonChip from '@site/static/img/chips/python.svg';
+import ShellChip from '@site/static/img/chips/shell.svg';
+import YamlChip from '@site/static/img/chips/yaml.svg';
+import DockerChip from '@site/static/img/chips/docker.svg';
+import SecurityChip from '@site/static/img/chips/security.svg';
+
 
 export type Skill = {
     name: string;
     Icon: ComponentType<SVGProps<SVGSVGElement>>;
+    ChipIcon?: ComponentType<SVGProps<SVGSVGElement>>;
     details: string[];
 };
 
@@ -20,6 +30,7 @@ export const skills: Skill[] = [
     {
         name: 'HTML',
         Icon: HtmlIcon,
+        ChipIcon: HtmlChip,
         details: [
             'Semantic structure: header, nav, main, section',
             'Accessible menus with aria attributes and focus states',
@@ -29,6 +40,7 @@ export const skills: Skill[] = [
     {
         name: 'CSS',
         Icon: CssIcon,
+        ChipIcon: CssChip,
         details: [
             'Responsive layouts with Grid and Flexbox',
             'Design tokens as CSS custom properties',
@@ -39,6 +51,7 @@ export const skills: Skill[] = [
     {
         name: 'Static site\ngenerator',
         Icon: DocusaurusIcon,
+        ChipIcon: DocusaurusChip,
         details: [
             'Portfolio and learning diary built with Docusaurus',
             'Own React components beside the generated docs pages',
@@ -49,6 +62,7 @@ export const skills: Skill[] = [
     {
         name: 'Python',
         Icon: PythonIcon,
+        ChipIcon: PythonChip,
         details: [
             'Command line tools built with argparse',
             'HTTP clients: methods, status codes, authentication',
@@ -59,6 +73,7 @@ export const skills: Skill[] = [
     {
         name: 'Shell\nscripting',
         Icon: ShellIcon,
+        ChipIcon: ShellChip,
         details: [
             'Container entrypoints with error handling and startup checks',
             'Server setup: SSH keys, nginx, git over SSH',
@@ -68,6 +83,7 @@ export const skills: Skill[] = [
     {
         name: 'Yaml',
         Icon: YamlIcon,
+        ChipIcon: YamlChip,
         details: [
             'GitHub Actions workflows for build, test and deployment',
             'Docker Compose stacks for multi-service applications',
@@ -78,6 +94,7 @@ export const skills: Skill[] = [
     {
         name: 'Container',
         Icon: DockerIcon,
+        ChipIcon: DockerChip,
         details: [
             'Multi-container stacks with Docker Compose and PostgreSQL',
             'Application images with their own entrypoint',
@@ -98,6 +115,7 @@ export const skills: Skill[] = [
     {
         name: 'IT Security',
         Icon: SecurityIcon,
+        ChipIcon: SecurityChip,
         details: [
             'OWASP Top 10 hands-on in OWASP Juice Shop',
             'Key-only SSH after disabling password authentication',
