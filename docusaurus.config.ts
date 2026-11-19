@@ -64,6 +64,24 @@ const config: Config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+        svgr: {
+          svgrConfig: {
+            svgoConfig: {
+              plugins: [
+                {
+                  name: 'preset-default',
+                  params: {
+                    overrides: {
+                      removeTitle: false,
+                      removeViewBox: false,
+                      cleanupIds: false,
+                    },
+                  },
+                },
+              ],
+            },
+          },
+        },
       } satisfies Preset.Options,
     ],
   ],
