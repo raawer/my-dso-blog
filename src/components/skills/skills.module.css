@@ -30,16 +30,75 @@
 }
 
 .card {
+    display: grid;
+}
+
+.card:focus-visible {
+    outline: 3px solid var(--color-white);
+    outline-offset: 4px;
+    border-radius: 30px;
+}
+
+.faces {
+    display: grid;
+    min-height: 12.5rem;
+}
+
+.front,
+.back {
+    grid-area: 1 / 1;
+    border-radius: 30px;
+    transition: opacity 0.1s ease-out;
+}
+
+.front {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 0.75rem;
-    min-height: 12.5rem;
     padding: 1rem;
     text-align: center;
     background-color: color-mix(in srgb, var(--color-bright-blue) 10%, transparent);
-    border-radius: 30px;
+}
+
+.back {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.25rem 1.5rem;
+    background-color: color-mix(in srgb, var(--color-sky-blue) 50%, transparent);
+    opacity: 0;
+}
+
+.card:hover .front,
+.card:focus-visible .front {
+    opacity: 0;
+}
+
+.card:hover .back,
+.card:focus-visible .back {
+    opacity: 1;
+}
+
+
+.backHeading {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.details {
+    margin: 0;
+    padding-left: 1.25rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.details li+li {
+    margin-top: 0.25rem;
 }
 
 .icon {
