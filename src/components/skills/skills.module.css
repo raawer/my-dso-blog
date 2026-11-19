@@ -95,6 +95,7 @@
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.2;
+    list-style-type: disc;
 }
 
 .details li+li {
@@ -111,4 +112,130 @@
     font-weight: 500;
     line-height: 1.2;
     white-space: pre-line;
+}
+
+.dots {
+    display: none;
+}
+
+@media (max-width: 996px) {
+    .skills {
+        padding: 5rem 0;
+    }
+
+    .inner {
+        gap: 0;
+    }
+
+    .heading {
+        padding-inline: 1.4375rem;
+        font-size: 2.5rem;
+        line-height: 1;
+    }
+
+    .list {
+        grid-template-columns: none;
+        grid-template-rows: repeat(3, auto);
+        grid-auto-flow: column;
+        grid-auto-columns: min(21.25rem, calc(100vw - 3.125rem));
+        gap: 0 1rem;
+        margin-top: 2rem;
+        padding-inline: 1.25rem;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-padding-inline: 1.25rem;
+        scrollbar-width: none;
+    }
+
+    .card {
+        scroll-snap-align: start;
+        padding: 0.5rem 0.5rem 0.5rem 0.75rem;
+        background-color: color-mix(in srgb, var(--color-bright-blue) 10%, transparent);
+        border-radius: 0;
+    }
+
+    .card:nth-child(3n + 1) {
+        padding-top: 1rem;
+        border-radius: 30px 30px 0 0;
+    }
+
+    .card:nth-child(3n) {
+        padding-bottom: 1rem;
+        border-radius: 0 0 30px 30px;
+    }
+
+
+    .faces {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        min-height: 0;
+    }
+
+    .front,
+    .back,
+    .card:hover .front,
+    .card:focus-visible .front {
+        grid-area: auto;
+        padding: 0;
+        background-color: transparent;
+        border-radius: 0;
+        opacity: 1;
+        transition: none;
+    }
+
+    .front {
+        flex: 0 0 5rem;
+        gap: 0.5rem;
+    }
+
+    .back {
+        flex: 1;
+    }
+
+    .backHeading {
+        display: none;
+    }
+
+    .icon {
+        height: 2.8125rem;
+    }
+
+    .dots {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+        padding: 0.1875rem 0.3125rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.875rem;
+    }
+
+    .dot,
+    .dotActive {
+        height: 1.5rem;
+        padding: 0.4375rem 0.3125rem;
+        background-clip: content-box;
+        border: none;
+        border-radius: 999px;
+        cursor: pointer;
+        transition: width 0.2s ease-out, background-color 0.2s ease-out;
+    }
+
+    .dot {
+        width: 1.25rem;
+        background-color: var(--color-muted-blue);
+    }
+
+    .dotActive {
+        width: 1.75rem;
+        background-color: var(--color-white);
+    }
+
+    .dot:focus-visible,
+    .dotActive:focus-visible {
+        outline: 3px solid var(--color-white);
+        outline-offset: 2px;
+    }
+
 }
