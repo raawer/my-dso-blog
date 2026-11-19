@@ -4,7 +4,7 @@ import photo from '@site/static/img/werner-hero.jpg';
 
 export default function Hero(): JSX.Element {
   return (
-    <section className={styles.hero}>
+    <section id="about" className={styles.hero}>
       <div className={styles.inner}>
         <p className={styles.greeting}>Hey there. 👋 I am</p>
         <h1 className={styles.title}>Werner Raatz</h1>
