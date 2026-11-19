@@ -36,3 +36,18 @@
   outline: 3px solid var(--color-white);
   outline-offset: 4px;
 }
+
+@media (max-width: 996px) {
+  .header {
+    padding: 2.0625rem 2rem 0.5rem;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .list {
+    display: none;
+  }
+}
