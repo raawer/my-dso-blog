@@ -52,7 +52,7 @@
     list-style-type: disc;
 }
 
-.textList li + li {
+.textList li+li {
     margin-top: 0.5rem;
 }
 
@@ -94,7 +94,7 @@
 
 @media (max-width: 996px) {
     .contact {
-        padding: 0 1.5rem;
+        padding: 2.5rem 1.5rem;
     }
 
     .inner {
