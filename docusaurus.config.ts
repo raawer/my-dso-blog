@@ -93,7 +93,7 @@ const config: Config = {
       title: 'My Project Portfolio',
       logo: {
         alt: 'Werner Raatz',
-        src: 'img/werner_xs.png',
+        src: 'img/werner-avatar.jpg',
       },
       items: [
         {
