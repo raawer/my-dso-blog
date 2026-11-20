@@ -4,6 +4,7 @@ import Header from '@site/src/components/header';
 import Skills from '@site/src/components/skills';
 import Projects from '@site/src/components/projects';
 import Contact from '@site/src/components/contact';
+import Footer from '@site/src/components/footer';
 
 export default function Home(): JSX.Element {
   return (
@@ -18,6 +19,7 @@ export default function Home(): JSX.Element {
         <Projects />
         <Contact />
       </main>
+      <Footer />
     </Layout>
   );
 }

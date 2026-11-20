@@ -75,6 +75,11 @@ body:has(.homepage) .navbar {
   display: none;
 }
 
+/* The homepage brings its own footer, so hide the Docusaurus one there. */
+body:has(.homepage) .theme-layout-footer {
+  display: none;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;

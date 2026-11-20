@@ -20,7 +20,7 @@ Bitte erfülle alle Punkte auf dieser Liste, bevor du das Projekt einreichst. So
   - [x] My-Skills
   - [x] My Project-Highlights
   - [x] Contact
-  - [ ] Footer
+  - [x] Footer
 - [x] Jede der oben genannten Sektionen besteht aus jeweils mindestens einer React-Component
 - [x] Die Sektionen werden in der Datei src/pages/index.tsx zu einem Layout zusammengesetzt
 - [x] Alle Komponenten sind jeweils in einem eigenen Ordner innerhalb von src/components gespeichert
