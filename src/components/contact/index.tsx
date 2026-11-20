@@ -13,7 +13,7 @@ export default function Contact(): JSX.Element {
                     </p>
                     <ul className={styles.textList}>
                         <li>
-                            I am open to roles in Dev(Sec)Ops, development and software
+                            I am open to roles in DevOps and DevSecOps, development and software
                             testing.
                         </li>
                         <li>
