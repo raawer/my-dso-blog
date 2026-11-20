@@ -1,13 +1,14 @@
-import TOCInline from '@theme/TOCInline';
-import GithubLinkAdmonition from '@site/src/components/GithubLinkAdmonition';
+import GithubLinkAdmonition from '@site/src/components/github-link-admonition';
 
 # Docusaurus Learning Diary and Project Portfolio
 
 A personal learning diary built with Docusaurus to document my progress throughout the DevSecOps training at Developer Akademie. This static website documents my learning progress, projects, and work in the field of DevSecOps.
 
-## TOC
+## Table of Contents
 
-<TOCInline toc={toc} />
+- [Quickstart](#quickstart)
+- [Description](#description)
+- [Further References](#further-references)
 
 <GithubLinkAdmonition 
     link="https://github.com/raawer/my-dso-blog"
