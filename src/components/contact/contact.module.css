@@ -9,7 +9,6 @@
    content, the left one takes the rest. Figma had to fake this alignment
    with a hand-tuned 280px gap, because it has no grid. */
 .inner {
-
     display: grid;
     grid-template-columns: 1fr auto;
     column-gap: 3.125rem;
@@ -24,7 +23,7 @@
     margin: 0;
     font-size: 4rem;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1;
 }
 
 .tagline {
