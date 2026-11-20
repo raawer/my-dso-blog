@@ -1,0 +1,116 @@
+.contact {
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--color-dark-blue);
+    color: var(--color-white);
+    padding: 4.5rem clamp(1.5rem, 8.33vw, 7.5rem);
+}
+
+/* One grid, shared by both rows: the right column is as wide as its widest
+   content, the left one takes the rest. Figma had to fake this alignment
+   with a hand-tuned 280px gap, because it has no grid. */
+.inner {
+
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 3.125rem;
+    row-gap: 0.625rem;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.heading {
+    grid-area: 1 / 1;
+    align-self: end;
+    margin: 0;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.tagline {
+    grid-area: 1 / 2;
+    align-self: end;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.text {
+    grid-area: 2 / 1;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.textLead {
+    margin: 0;
+}
+
+.textList {
+    margin: 0.75rem 0 0;
+    padding-left: 1.25rem;
+    list-style-type: disc;
+}
+
+.textList li + li {
+    margin-top: 0.5rem;
+}
+
+.contacts {
+    grid-area: 2 / 2;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.contactLink {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.contactIcon {
+    flex: none;
+    width: 2rem;
+    height: 2rem;
+    color: var(--color-vibrant-blue);
+}
+
+.contactLink:hover .contactIcon,
+.contactLink:focus-visible .contactIcon {
+    color: var(--color-light-blue);
+}
+
+.contactLink:focus-visible {
+    outline: 3px solid var(--color-white);
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
+@media (max-width: 996px) {
+    .contact {
+        padding: 0 1.5rem;
+    }
+
+    .inner {
+        grid-template-columns: 1fr;
+        row-gap: 2.5rem;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+
+    .heading,
+    .tagline,
+    .text,
+    .contacts {
+        grid-area: auto;
+    }
+}
