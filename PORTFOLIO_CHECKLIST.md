@@ -19,7 +19,7 @@ Bitte erfülle alle Punkte auf dieser Liste, bevor du das Projekt einreichst. So
   - [x] Hero
   - [x] My-Skills
   - [x] My Project-Highlights
-  - [ ] Contact
+  - [x] Contact
   - [ ] Footer
 - [x] Jede der oben genannten Sektionen besteht aus jeweils mindestens einer React-Component
 - [x] Die Sektionen werden in der Datei src/pages/index.tsx zu einem Layout zusammengesetzt
