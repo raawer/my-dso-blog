@@ -116,10 +116,6 @@
     border-radius: 30px;
 }
 
-.cardHidden {
-    display: none;
-}
-
 .cardHeader {
     display: flex;
     align-items: center;
@@ -279,10 +275,6 @@
         display: block;
     }
 
-    .cardHidden {
-        display: flex;
-    }
-
     .card {
         counter-increment: project;
         gap: 1rem;
@@ -325,5 +317,11 @@
 
     .buttons {
         justify-content: space-between;
+    }
+}
+
+@media (min-width: 997px) {
+    .card.cardHidden {
+        display: none;
     }
 }
