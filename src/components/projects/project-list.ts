@@ -16,7 +16,6 @@ function skill(name: string): Skill {
 
 export type Project = {
   name: string;
-  title: string;
   chips: Skill[];
   image?: string;
   imageAlt: string;
@@ -28,7 +27,6 @@ export type Project = {
 export const projects: Project[] = [
   {
     name: 'Truck Signs API',
-    title: 'Project Truck Signs',
     chips: [skill('Python'), skill('Container'), skill('Yaml'), skill('Shell scripting')],
     image: truckSignsImage,
     imageAlt: 'The Django admin panel of the Truck Signs store',
@@ -38,8 +36,7 @@ export const projects: Project[] = [
     github: 'https://github.com/raawer/dso-truck-signs-api-v2',
   },
   {
-    name: 'Conduit Deployment',
-    title: 'Project Conduit',
+    name: 'Conduit',
     chips: [
       skill('Container'),
       skill('CI/CD with GitHub Actions'),
@@ -55,7 +52,6 @@ export const projects: Project[] = [
   },
   {
     name: 'Juice Shop Master',
-    title: 'Project Juice Shop',
     chips: [skill('IT Security'), skill('Container'), skill('Shell scripting')],
     image: juiceShopImage,
     imageAlt: 'The product listing of the OWASP Juice Shop',
@@ -66,7 +62,6 @@ export const projects: Project[] = [
   },
   {
     name: 'Minecraft Server',
-    title: 'Project Minecraft',
     chips: [skill('Container'), skill('Yaml'), skill('Shell scripting'), skill('IT Security')],
     image: minecraftImage,
     imageAlt: 'The Minecraft server project',
@@ -77,7 +72,6 @@ export const projects: Project[] = [
   },
   {
     name: 'V-Server Setup',
-    title: 'Project V-Server',
     chips: [skill('Shell scripting'), skill('IT Security')],
     image: vServerImage,
     imageAlt: 'A terminal session on the configured server',
