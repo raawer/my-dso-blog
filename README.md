@@ -199,19 +199,34 @@ This builds locally and pushes the result to the branch named in `DEPLOYMENT_BRA
 ### NGINX in a Container
 
 The `Dockerfile` builds the site and serves it from NGINX, which is the route to take
-when hosting on your own server rather than on Pages:
+when hosting on your own server rather than on Pages.
+
+**Set `BASE_URL` to the path the container serves from.** NGINX serves the build
+output at the root, while the default build prefixes every asset with `/my-dso-blog/`
+for GitHub Pages. Without the argument the page loads but finds none of its
+stylesheets.
+
+For a local check:
+
+```bash
+docker build -t my-dso-blog --build-arg BASE_URL=/ .
+docker run --rm -p 8088:80 my-dso-blog
+```
+
+The site is then at <http://localhost:8088>. For a real deployment, pass the origin
+as well:
 
 ```bash
 docker build -t my-dso-blog \
+  --build-arg BASE_URL=/ \
   --build-arg DEPLOYMENT_URL=https://example.com \
   --build-arg GITHUB_ORG=<org> \
   --build-arg GITHUB_PROJECT=<project> .
-docker run --rm -p 8080:80 my-dso-blog
 ```
 
-The image is built in two stages: `node:20.16-alpine` produces `build/`, and only that
-folder is copied into the `nginx` image, so no build toolchain ends up in the running
-container. When serving at a domain root rather than under a path, set `BASE_URL=/`.
+The image is built in two stages: `node:26-alpine` produces `build/`, and only that
+folder is copied into the `nginx:1.30-alpine` image, so no build toolchain ends up in
+the running container.
 
 `docs/guides/deploy-docusaurus-with-docker-and-nginx.md` walks through the setup step
 by step.
