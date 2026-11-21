@@ -1,17 +1,18 @@
-FROM node:20.16-alpine as builder
+FROM node:26-alpine AS builder
 
 WORKDIR /app
 
 ARG BLOG_ENABLED=false
-ARG DEPLOYMENT_URL="https://spmse.github.io"
+ARG DEPLOYMENT_URL="https://raawer.github.io"
+ARG BASE_URL="/my-dso-blog/"
 ARG DEPLOYMENT_BRANCH="main"
-ARG GITHUB_ORG="spmse"
-ARG GITHUB_PROJECT="dev-blog-template"
+ARG GITHUB_ORG="raawer"
+ARG GITHUB_PROJECT="my-dso-blog"
 
-COPY . $WORKDIR
+COPY . .
 
-RUN npm install && npm run build
+RUN npm ci && npm run build
 
-FROM nginx:latest as runner
+FROM nginx:1.30-alpine AS runner
 
 COPY --from=builder /app/build /usr/share/nginx/html
