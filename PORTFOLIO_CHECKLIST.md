@@ -48,7 +48,7 @@ Die Dokumentationssprache für alle Projekte (und zugehörige Unterlagen) ist En
 
 ### Allgemeine Hinweise
 
-- [ ] Zusätzlich zu deinem GitHub-Repository solltest du ein kurzes Loom-Video (maximal 5 min.) aufnehmen und bereitstellen, in dem du kurz deine Abgabe zeigst und vorstellst, was du getan hast – dabei musst du nicht alle Details erwähnen, jedoch sollst du auf alle relevanten Schritte kurz eingehen und diese zeigen.
+- [x] Zusätzlich zu deinem GitHub-Repository solltest du ein kurzes Loom-Video (maximal 5 min.) aufnehmen und bereitstellen, in dem du kurz deine Abgabe zeigst und vorstellst, was du getan hast – dabei musst du nicht alle Details erwähnen, jedoch sollst du auf alle relevanten Schritte kurz eingehen und diese zeigen.
 - [x] Bei Fragen melde dich gerne über das Ticketsystem
   - [x] Bitte mache ein Frage-Ticket im entsprechenden Channel auf, um Fragen zu stellen
   - [x] Wenn du dein Projekt einreichst, dann sollten keine Unklarheiten oder Ähnliches mehr offen sein. Bei Fragen oder Unklarheiten deinerseits behalten wir uns vor, eine Abgabe direkt abzulehnen
