@@ -87,6 +87,18 @@ body:has(.homepage) {
   --ifm-heading-font-family: 'Quicksand', sans-serif;
 }
 
+/* The sticky header floats above the page, so anchor targets have to stop
+   below it instead of under it. */
+body:has(.homepage) main section {
+  scroll-margin-top: 6.9125rem;
+}
+
+@media (max-width: 996px) {
+  body:has(.homepage) main section {
+    scroll-margin-top: 4.5625rem;
+  }
+}
+
 @media (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;
