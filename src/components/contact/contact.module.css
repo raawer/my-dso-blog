@@ -35,8 +35,11 @@
     line-height: 1.2;
 }
 
+/* The design ends the text block at the arrow's left edge, 700px into the
+   1440px frame. The content starts 120px in, so the block is 580px wide. */
 .text {
     grid-area: 2 / 1;
+    max-width: 36.25rem;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.1;
@@ -104,6 +107,10 @@
 
     .heading {
         font-size: 2rem;
+    }
+
+    .text {
+        max-width: none;
     }
 
     .heading,
