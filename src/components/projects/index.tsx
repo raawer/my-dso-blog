@@ -84,7 +84,11 @@ export default function Projects(): JSX.Element {
                                                 </Link>
                                             )}
                                             {project.github && (
-                                                <a className={styles.buttonSecondary} href={project.github}>
+                                                <a
+                                                    className={styles.buttonSecondary}
+                                                    href={project.github}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer">
                                                     GitHub
                                                 </a>
                                             )}
