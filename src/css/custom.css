@@ -80,6 +80,13 @@ body:has(.homepage) .theme-layout-footer {
   display: none;
 }
 
+/* Infima's h1..h6 rule matches headings directly, so the sections' inherited
+   font-family never applies to them. Override the token instead. */
+body:has(.homepage) {
+  --ifm-font-family-base: 'Quicksand', sans-serif;
+  --ifm-heading-font-family: 'Quicksand', sans-serif;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;
