@@ -321,7 +321,40 @@
 }
 
 @media (min-width: 997px) {
+
+    /* All cards share a single grid cell, so the container is always as tall
+       as the longest one and keeps its height when another card is picked. */
+    .cards {
+        display: grid;
+    }
+
+    .card {
+        grid-area: 1 / 1;
+    }
+
     .card.cardHidden {
-        display: none;
+        visibility: hidden;
+    }
+
+    /* visibility is inherited, so masks, clip paths and patterns inside a
+       hidden card would draw nothing. Every card renders the same icons with
+       the same ids, and a reference resolves to the first match in the
+       document — so the visible card's icon vanishes with them. These
+       elements are never painted themselves, only used as references. */
+    .card.cardHidden defs,
+    .card.cardHidden mask {
+        visibility: visible;
+    }
+
+    /* Keeps the card body at the same offset no matter whether the title
+       wraps to a second line or the chips wrap to a second row. */
+    .cardHeader {
+        min-height: 6rem;
+    }
+
+    /* Fills the height the grid reserves, so the buttons sit at the bottom
+       of every card instead of following the end of the description. */
+    .cardBody {
+        flex: 1 1 auto;
     }
 }
