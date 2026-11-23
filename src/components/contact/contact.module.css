@@ -35,11 +35,13 @@
     line-height: 1.2;
 }
 
-/* The design ends the text block at the arrow's left edge, 700px into the
-   1440px frame. The content starts 120px in, so the block is 580px wide. */
+/* The design ends the text block at the arrow's left edge. The arrow is
+   centred on the page, so that edge sits at half the viewport minus half
+   the button, and the block starts at the section's padding. Above 1440px
+   the content is capped at 75rem and the result is a constant 580px. */
 .text {
     grid-area: 2 / 1;
-    max-width: 36.25rem;
+    max-width: min(36.25rem, 50vw - 1.25rem - clamp(1.5rem, 8.33vw, 7.5rem));
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.1;
